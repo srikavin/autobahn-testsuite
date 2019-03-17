@@ -495,7 +495,7 @@ class FuzzingFactory:
       Create filename for case detail report from agent and case.
       """
       c = caseId.replace('.', '_')
-      return self.cleanForFilename(agentId) + "_case_" + c + "." + ext
+      return "server" + "_case_" + c + "." + ext
 
 
    def limitString(self, s, limit, indicator = " ..."):
